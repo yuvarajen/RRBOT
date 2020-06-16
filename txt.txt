@@ -1,0 +1,3 @@
+"appId": "bd3a0a81-cf38-4110-a934-9a7011688f32"
+
+az deployment create --template-file "./template-with-new-rg.json" --location "westus" --parameters appId="32fe0d52-4cee-4203-83ae-1eab509910dc" appSecret='Password@12345' botId="<id or bot-app-service-name>" botSku=F0 newAppServicePlanName='rrchatbot' newWebAppName="rrchatbot" groupName="rrchatbot" groupLocation='westus' newAppServicePlanLocation='westus' --name "rrchatbot"
